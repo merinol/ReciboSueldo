@@ -1,0 +1,171 @@
+
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>A N S E S</title>
+	<link href="/css/estilo_sse.css" type="text/css" rel="stylesheet" />
+	<script type="text/javascript" src="/libreria/funciones_sse.js"></script>
+	<script type="text/javascript" src="/libreria/menu_sse.js"></script>
+
+</head>
+
+<body>
+<div id="capa_menu" style="position:absolute; left:1%; top:10px; width:98%; z-index:2">
+<img src="/iconos/ENCABEZADO-05.png" alt="GEJ" width="100%" />
+<table width="100%">
+	<tr>
+		<td class="fuentebarranombre" align="right"><script type="text/javascript">
+var Today = new Date();	
+var WeekDays = new Array("Domingo", "Lunes", "Martes", "Mi&eacute;rcoles", "Jueves", "Viernes", "S&aacute;bado");
+var Months = new Array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
+var WeekDay = WeekDays[Today.getDay()];			
+var Month = Months[Today.getMonth()];
+document.write(WeekDay + " " + Today.getDate() + " de " + Month);
+</script></td>
+	</tr>
+</table>
+
+</div>
+
+<div id="capa_cuerpo" style="position:absolute; left:1%; top:70px; width:98%; z-index:3">
+<table width="100%">
+<tr>
+	<td class="fuentetitulomenu">
+	<!--<b>Mi informaci&oacute;n personal ></b> En este m&oacute;dulo puedes consultar o modificar tus datos personales.-->
+
+</td>
+	<td class="fuentedescripcion"></td>
+	<!--<td class="titulofuncional">Autogesti&oacute;n del Empleado</td>-->
+</tr>
+<tr>
+	<!--<td class="descripcionfuncional">Desde aqu&iacute; puedes modificar tus datos personales, consultar tus recibos de n&oacute;mina, ver tu plan de carrera o solicitar cursos de formaci&oacute;n. Recuerda que para acceder a estas y otras secciones del SSE, debes identificarte previamente.&nbsp;</td>-->
+</tr>
+</table>
+<br /><br />
+<table width="100%" cellspacing="0"><tr><td>
+<table width="100%" cellspacing="0">
+<tr>	
+	
+	<td width="30%"></td>
+</tr>
+</table>
+</td></tr>
+<tr><td>
+<!--
+<table width="100%" cellspacing="0">
+<tr>
+	<td width="30%"></td>
+	<td width="70%" colspan="2" class="fuentetitulomenu">Mis datos econ&oacute;micos</td>
+	<td width="30%"></td>
+</tr>
+<tr>
+	<td width="30%"></td>
+	<td width="70%" colspan="2"><hr class="Barramenu" /></td>
+</tr>
+<tr>
+	<td width="30%"></td>
+	<td class="fuentedescripcion">En este m&oacute;dulo puedes consultar o modificar el n&uacute;mero de tu cuenta bancaria, agregar otras o consultar tus recibos de n&oacute;mina.</td>
+	<td><img src="/iconos/noname_mujer_cajero_73_100.gif" width="73" height="100" alt="Mis datos econ&oacute;micos" /></td>
+</tr>
+</table>
+-->
+</td></tr>
+<tr><td>
+<!--
+<table width="100%" cellspacing="0">
+<tr>
+	<td colspan="2" class="fuentetitulomenu">Mi puesto de trabajo</td>
+	<td width="30%"></td>
+</tr>
+<tr>
+	<td colspan="2"><hr class="barramenu" /></td>
+</tr>
+<tr>
+	<td><img src="/iconos/noname_hombre_profesional_48_100.gif" width="48" height="100" alt="Mi puesto de trabajo" /></td>
+	<td class="descripcionfuncional">En este m&oacute;dulo puedes consultar tu historial de puestos, tu plan de carrera y la movilidad interna que hay en tu empresa; tambi&eacute;n puedes solicitar cursos de formaci&oacute;n y consultar tus procesos de evaluaci&oacute;n.</td>
+</tr>
+</table>
+-->
+</td></tr>
+<tr><td>
+<!--
+<table width="100%" cellspacing="0">
+<tr>
+	<td width="30%"></td>
+	<td width="70%" colspan="2" class="fuentetitulomenu">Mi tiempo de trabajo</td>
+</tr>
+<tr>
+	<td width="30%"></td>
+	<td width="70%" colspan="2"><hr class="barramenu" /></td>
+</tr>
+<tr>
+	<td width="30%"></td>
+	<td class="fuentedescripcion">En este m&oacute;dulo puedes consultar o solicitar  vacaciones, as&iacute; como consultar el calendario de festivos de la empresa y comprobar tus ausencias.</td>
+	<td><img src="/iconos/noname_tiempo_trabajo_ 73_100.gif" width="73" height="100" alt="Mi tiempo de trabajo" /></td>
+</tr>
+</table>
+-->
+</td></tr></table>
+</div>
+<div id="capa_link" style="position:absolute; left:1%; top:100px; width:98%; z-index:1">
+
+	<script language="JavaScript">
+	straux=window.location.href;
+	if(straux.indexOf("login")==-1)
+	{aux_zurl="servlet/CheckSecurity/JSP/" + straux.substring(straux.indexOf("servlet/CheckSecurity/JSP/") + "servlet/CheckSecurity/JSP/".length, straux.length);
+	}else{
+	aux_zurl = "/servlet/CheckSecurity/JSP/sse_generico/generico_portal.jsp?lang=es&estado=0";
+	}
+	</script>
+
+	
+<form id="login" name="login" action="/servlet/login" method="post">
+<table width="100%" border= "0"><tr><td>
+<table width="100%"  cellspacing="0" cellpadding="2" border="0">
+<tr><td class="fuentelinktitulo" colspan="2" >&nbsp;<b>INDENTIFICATE</b></td></tr>
+</table>
+<table width="25%"  cellspacing="0" cellpadding="2" border="0">
+<tr ><td  style="FONT-SIZE:8px;">&nbsp;  </td></tr>
+<tr><td class="fuentelinkcampo" colspan="2">&nbsp;Usuario:</td></tr>
+<tr><td class="fuentelinkcampo" colspan="2"><input type="hidden" name="_LANG" value="3" /><input type="hidden" id="_URL" name="_URL"  value="" />&nbsp;&nbsp;<input alt="Introduce tu usuario" type="text" id="_USER" name="_USER" size="14" style="border-width:0;" style="width:200px" /></td></tr>
+<tr><td class="fuentelinkcampo" colspan="2">&nbsp;Contrase&ntilde;a:</td></tr>
+<tr><td class="fuentelinkcampo" width="20%">&nbsp;&nbsp;<input title="Introduce tu contrase&ntilde;a" size="14" type="password" id="_PASSWD" name="_PASSWD" style="border-width:0;"  style="width:200px" /></td>
+<td class="fuentelinkcampo"> <input title="Con&eacute;ctate" type="image" src="/iconos/icono_enviar_ess_entrar.png" width="80px" onmouseover="m4luztotal(this,245,245,245,50,40,40,100,100,100)" onmouseout="m4oscuridad(this)" id="enviar" name="enviar" /></td></tr>
+<tr><td class="fuentelinkcampo" colspan="2" height="1px">&nbsp;</td></tr>
+</table>
+</td></tr>
+</table>
+</form>
+
+<script type="text/javascript">
+document.forms.login._URL.value=aux_zurl;
+m4focus("login","_USER");
+</script>
+
+
+<table width="100%" border= "0">
+<tr><td align="center">
+<input type="image" src="/iconos/ADELOGO.jpg" />
+</td></tr>
+</table>
+
+</div>
+<div id="capa_link2" style="position:absolute; left:1%; bottom:0%; width:98%; z-index:4">
+<!-- Pie de pagina -->
+<table width="100%">
+<tr>
+	<td class="fuentedisclaimer" align="center">
+		2000 
+		<a  title="Meta4" href="http://intranet/">
+			<FONT COLOR="#6E6E6E">Meta4 Spain, S.A</FONT>
+		</a>
+		- Todos los derechos reservados
+	</td>
+</tr>
+</table>
+
+</div>
+
+</body>
